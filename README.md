@@ -1,5 +1,17 @@
 # Módulo de Proyectos con Servlets y JSP
 
+[![Build](https://github.com/royzeer/plataforma-ambiental-servlets/actions/workflows/build.yml/badge.svg)](https://github.com/royzeer/plataforma-ambiental-servlets/actions/workflows/build.yml)
+![Java 17](https://img.shields.io/badge/Java_17-ED8B00?logo=openjdk&logoColor=white)
+![Jakarta Servlet 6](https://img.shields.io/badge/Jakarta_Servlet_6-007396?logo=eclipsejakartaee&logoColor=white)
+![JSP + JSTL](https://img.shields.io/badge/JSP_%2B_JSTL-007396?logo=eclipsejakartaee&logoColor=white)
+![JDBC](https://img.shields.io/badge/JDBC-4479A1?logo=mysql&logoColor=white)
+![MySQL 8](https://img.shields.io/badge/MySQL_8-4479A1?logo=mysql&logoColor=white)
+![Tomcat 10.1](https://img.shields.io/badge/Tomcat_10.1-F8DC75?logo=apachetomcat&logoColor=black)
+![Maven](https://img.shields.io/badge/Maven-C71A36?logo=apachemaven&logoColor=white)
+![licencia MIT](https://img.shields.io/badge/licencia_MIT-blue?logo=opensourceinitiative&logoColor=white)
+
+> *English summary at the [end of this file](#english-summary).*
+
 **Plataforma Digital Integral para la Gestión de Proyectos de Impacto Ambiental**
 
 | | |
@@ -72,4 +84,16 @@ database/datos_prueba.sql         # usuarios y 3 proyectos de ejemplo
 
 ## Repositorio
 
-Ver `ENLACE_REPOSITORIO.txt`.
+https://github.com/royzeer/plataforma-ambiental-servlets
+
+---
+
+## English summary
+
+Java web module (Servlets + JSP) to **manage environmental projects**: create, list, search, view, edit and delete, with server-side validation.
+
+**Highlights:** `GET` for queries and forms, `POST` for every change (records are never deleted through a link), JDBC with `PreparedStatement` and the DAO pattern, JSP directives, actions, EL and JSTL, custom error pages and UTF-8 encoding.
+
+**Tech stack:** Java 17 · Jakarta Servlet 6 · JSP + JSTL · JDBC · MySQL 8 · Apache Tomcat 10.1 · Maven · GitHub Actions.
+
+**Run it:** create the database with `database/schema.sql` and `database/datos_prueba.sql`, set your MySQL credentials in `src/main/resources/db.properties`, build the WAR with `mvn package` and deploy it on Tomcat 10.1.
